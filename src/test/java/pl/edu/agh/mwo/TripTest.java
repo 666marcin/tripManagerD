@@ -24,4 +24,10 @@ public class TripTest {
 		assertEquals(2, trip.getPhotos().size());
 	}
 
+	@Test
+	public void testSetDescription() {
+		Trip trip = new Trip("nazwa", "opis");
+		trip.setDescription("inny opis");
+		assertEquals("inny opis", trip.getDescription());
+	}
 }
