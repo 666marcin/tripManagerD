@@ -30,4 +30,12 @@ public class TripTest {
 		trip.setDescription("inny opis");
 		assertEquals("inny opis", trip.getDescription());
 	}
+	
+	@Test
+	public void testSetName() {
+		Trip trip = new Trip("nazwa", "opis");
+		trip.setName("inna nazwa");
+		assertEquals("inna nazwa", trip.getName());
+	}
+	
 }
